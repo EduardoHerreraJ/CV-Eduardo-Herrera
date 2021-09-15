@@ -1,0 +1,106 @@
+@import 'countdown';
+
+#content {
+    background-color: #EAEAEA;
+}
+
+#education {
+    margin: auto;
+
+    div {
+        margin: auto;
+        padding: 0 1.5rem 0 1.5rem;
+        
+        @include responsiveTablet() {
+            padding: 1.5rem;
+
+        }
+    }
+}
+
+#intro-text{
+    width: 100%;
+}
+
+.competence-list {
+    padding: 0;
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        >p {
+            margin: 7px 0 7px 0;
+            max-width: 80%;
+        }
+    }
+}
+
+.year-box {
+    padding: 10px;
+    max-height: 36px;
+    height: 100%;
+    vertical-align: middle;
+    color: #EAEAEA;
+    background-color: #181a18;
+}
+
+#routine {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+
+    td {
+        &:hover {
+            background-color: #2e2e2e;
+            color: #c3c3c3;
+            cursor: pointer;
+        }
+    }
+}
+
+.seguridad{
+    background-color: #dcdcdc;
+}
+.desayuno{
+    background-color: #dcdcdc;
+}
+.baño{
+    background-color: #d3d3d3;
+}
+.udemy{
+    background-color: #d3d3d3;
+}
+.ciudadania{
+    background-color: #c0c0c0;
+}
+.amigos{
+    background-color: #c0c0c0;
+}
+.mercado{
+    background-color: #a9a9a9;
+}
+.analisis_datos{
+    background-color: #a9a9a9;
+}
+.web{
+    background-color: #a9a9a9;
+}
+.abuelos{
+    background-color: #808080;
+}
+.comida{
+    background-color: #696969;
+}
+.proyecto_personal{
+    background-color: #696969;
+}
+
+td, th {
+    text-align: center;
+    padding: 5px;
+}
+
+#hora_header {
+    width: 80px;
+}

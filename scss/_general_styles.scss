@@ -1,0 +1,48 @@
+body, h1, h2, h3, h4, h5{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-fluid, .container {
+    padding: 20px 15px 20px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.top-title {
+    @extend .center-h;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include responsiveMobile() {
+        margin-bottom: 20px
+    }
+}
+
+.title {
+    @extend .center-h;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitle {
+    margin-top: 50px;
+}

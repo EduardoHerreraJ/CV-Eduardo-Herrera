@@ -1,0 +1,15 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.center{
+    @include flexCenter(column);
+}
+
+.center-h{
+    @include flexCenter(row);
+}

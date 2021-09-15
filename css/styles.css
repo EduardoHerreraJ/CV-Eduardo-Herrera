@@ -1,0 +1,356 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-h, .title, .top-title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+body, h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-fluid, .container {
+  padding: 20px 15px 20px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.top-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .top-title {
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.subtitle {
+  margin-top: 50px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  position: sticky;
+  top: 0px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
+@media only screen and (max-width: 992px) {
+  #main {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+#header {
+  background-color: #181a18;
+  color: #808080;
+}
+#header .row {
+  justify-content: space-between;
+}
+#header .row #intro {
+  margin: auto;
+  width: 45%;
+}
+@media only screen and (max-width: 992px) {
+  #header .row {
+    text-align: center;
+    justify-content: center;
+  }
+  #header .row img {
+    padding-bottom: 20px;
+  }
+  #header .row #intro {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+#profile-pic {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#countdown {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+#countdown ul {
+  padding: 0;
+}
+#countdown li {
+  display: inline-block;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+#countdown li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  #countdown li {
+    font-size: 0.7rem;
+  }
+  #countdown li span {
+    font-size: 2rem;
+  }
+}
+#content {
+  background-color: #EAEAEA;
+}
+
+#education {
+  margin: auto;
+}
+#education div {
+  margin: auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+@media only screen and (max-width: 992px) {
+  #education div {
+    padding: 1.5rem;
+  }
+}
+
+#intro-text {
+  width: 100%;
+}
+
+.competence-list {
+  padding: 0;
+}
+.competence-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.competence-list li > p {
+  margin: 7px 0 7px 0;
+  max-width: 80%;
+}
+
+.year-box {
+  padding: 10px;
+  max-height: 36px;
+  height: 100%;
+  vertical-align: middle;
+  color: #EAEAEA;
+  background-color: #181a18;
+}
+
+#routine {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+#routine td:hover {
+  background-color: #2e2e2e;
+  color: #c3c3c3;
+  cursor: pointer;
+}
+
+.seguridad {
+  background-color: #dcdcdc;
+}
+
+.desayuno {
+  background-color: #dcdcdc;
+}
+
+.baño {
+  background-color: #d3d3d3;
+}
+
+.udemy {
+  background-color: #d3d3d3;
+}
+
+.ciudadania {
+  background-color: #c0c0c0;
+}
+
+.amigos {
+  background-color: #c0c0c0;
+}
+
+.mercado {
+  background-color: #a9a9a9;
+}
+
+.analisis_datos {
+  background-color: #a9a9a9;
+}
+
+.web {
+  background-color: #a9a9a9;
+}
+
+.abuelos {
+  background-color: #808080;
+}
+
+.comida {
+  background-color: #696969;
+}
+
+.proyecto_personal {
+  background-color: #696969;
+}
+
+td, th {
+  text-align: center;
+  padding: 5px;
+}
+
+#hora_header {
+  width: 80px;
+}
+
+#footer {
+  background-color: #181a18;
+  color: #808080;
+  margin: 0px;
+}
+#footer ul {
+  margin: 10px 0 15px 0;
+}
+#footer p {
+  margin: 5px;
+}
+
+#contact-icons {
+  padding: 0;
+  font-size: 2em;
+}
+#contact-icons li {
+  padding-right: 10px;
+  display: inline-block;
+  width: 1.2em;
+  transition: all 0.2s ease-in-out;
+}
+#contact-icons li:hover {
+  transform: scale(1.5);
+}
+#contact-icons li img {
+  width: 40px;
+  height: 40px;
+}
+
+.skills {
+  counter-reset: list-counter;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+.skills li {
+  margin: 1.5em 0;
+}
+.skills li::before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  margin-right: 1em;
+  border: 0.25em solid #ccc;
+  background: #000;
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}

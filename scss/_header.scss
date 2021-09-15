@@ -1,0 +1,31 @@
+#header{
+    background-color: #181a18;
+    color: #808080;
+
+    .row {
+        justify-content: space-between;
+        #intro {
+            margin: auto;
+            width: 45%;
+        }
+
+        @include responsiveTablet() {
+            text-align: center;
+            justify-content: center;
+            img {
+                padding-bottom: 20px;
+            }
+            #intro {
+                padding-left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+#profile-pic {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

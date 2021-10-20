@@ -17,6 +17,7 @@ app.get('', (req, res) => {
     res.render('index')
 })
 
+// Serving the app on the specified port
 app.listen(port, () =>{
     console.log('Server is up on port ' + port + '.')
 })
